@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendor/font-awesome-animation/dist/font-awesome-animation.min.css">
+	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/datatables/media/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="vendor/datatables-colreorder/css/dataTables.colReorder.css">
+	<link rel="stylesheet" href="vendor/datatables-colvis/css/dataTables.colVis.css">
+	<link rel="stylesheet" href="vendor/datatables-tabletools/css/dataTables.tableTools.css">
+	<link rel="stylesheet" href="vendor/datatables-responsive/css/dataTables.responsive.css">
+	<link rel="stylesheet" href="vendor/datatables-scroller/css/dataTables.scroller.css">
+	<link rel="stylesheet" href="vendor/datatables-fixedcolumns/css/dataTables.fixedColumns.css">
+	<link rel="stylesheet" href="vendor/datatables-fixedheader/css/dataTables.fixedHeader.css">
+    <link rel="stylesheet" href="vendor/backtotop/backtotop.min.css">
+    <link rel="stylesheet" href="vendor/highlightjs/styles/github.css">
+    <link rel="stylesheet" href="dist/plugins/bootstrap/datatables.bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body ng-app="showcase.withOptions">
+    <div ng-controller="WithOptionsCtrl as showCase">
+    <table datatable="" dt-options="showCase.dtOptions" dt-column-defs="showCase.dtColumnDefs" class="row-border hover">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>First name</th>
+            <th>Last name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Foo</td>
+            <td>Bar</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>Someone</td>
+            <td>Youknow</td>
+        </tr>
+        <tr>
+            <td>987</td>
+            <td>Iamout</td>
+            <td>Ofinspiration</td>
+        </tr>
+            <script src="Scripts/jquery-2.1.3.js"></script>
+            <script src="Scripts/jquery.dataTables.min.js"></script>
+            <script src="Scripts/angular.min.js"></script>
+            <script src="Scripts/angular-datatables.min.js"></script>
+            <script src="showcase.js"></script>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
